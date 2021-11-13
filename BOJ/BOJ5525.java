@@ -1,7 +1,9 @@
+package BOJ;
+
 import java.util.*;
 
 // น้มุ 5525น๘: IOIOI
-class BJ5525 {
+class BOJ5525 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = Integer.parseInt(sc.nextLine());

@@ -1,8 +1,10 @@
+package BOJ;
+
 import java.util.*;
 import java.io.*;
 
-// ¹éÁØ ÁÂÇ¥¾ÐÃà ¹®Á¦ : ÁÂÇ¥¾ÐÃà Xi > Xj¸¦ ÃæÁ·ÇÏ´Â °³¼ö Áï, xiº¸´Ù ÀÛÀº °ÍÀÇ °³¼ö ±¸ÇÏ±â
-class BJ18870 {
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½Ç¥ï¿½ï¿½ï¿½ï¿½ Xi > Xjï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½, xiï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
+class BOJ18870 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
@@ -10,8 +12,8 @@ class BJ18870 {
 		int N = Integer.parseInt(br.readLine());
 		String[] sarr = br.readLine().split(" ");
 
-		int[] numarr = new int[N]; // ¿ø·¡¹è¿­
-		int[] temp = new int[N];  // Á¤·ÄÇÑ ¹è¿­
+		int[] numarr = new int[N]; // ï¿½ï¿½ï¿½ï¿½ï¿½è¿­
+		int[] temp = new int[N];  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­
 
 		for(int i=0; i<N; i++) {
 			numarr[i] = Integer.parseInt(sarr[i]); 

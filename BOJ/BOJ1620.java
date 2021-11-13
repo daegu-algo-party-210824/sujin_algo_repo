@@ -1,8 +1,13 @@
+package BOJ;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
-// ¹éÁØ ³ª´Â¾ß Æ÷ÄÏ¸ó¸¶½ºÅÍ ÀÌ´Ù¼Ø : Æ÷ÄÏ¸ó µµ°¨¿¡¼­ ÀÌ¸§À¸·Î ¹øÈ£¸¦ Ã£°í ¹øÈ£·Î ÀÌ¸§ Ã£´Â ¹®Á¦
-class BJ1620 {
-	public static void main(String[] args) {
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¾ï¿½ ï¿½ï¿½ï¿½Ï¸ó¸¶½ï¿½ï¿½ï¿½ ï¿½Ì´Ù¼ï¿½ : ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ì¸ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+class BOJ1620 {
+	public static void main(String[] args) throws IOException {
 	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());

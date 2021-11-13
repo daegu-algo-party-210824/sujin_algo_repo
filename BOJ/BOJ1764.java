@@ -1,7 +1,8 @@
+package BOJ;
+
 import java.util.*;
 
-// 백준 듣보잡 문제 : N - 듣도못한 사람 M - 보도 못한 사람 -> 듣도보도 못한 사람의 수와 이름 오름차순 출력
-class BJ1764 {
+class BOJ1764 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
@@ -21,11 +22,12 @@ class BJ1764 {
 		for(String key : map.keySet()) {
 			if(map.get(key) == 2) list.add(key);
 		}
-		list.sort(Comparator.naturalOrder());
+		Collections.sort(list);
+//		list.sort(Comparator.naturalOrder());
 		
 		System.out.println(list.size());
-		for(int i=0; i<list.size(); i++) {
-			System.out.println(list.get(i));	
+		for(String x : list) {
+			System.out.println(x);
 		}
 	}
 }
