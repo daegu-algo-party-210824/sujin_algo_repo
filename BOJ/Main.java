@@ -1,26 +1,36 @@
 package BOJ;
 
+import javax.swing.text.Position;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
-// TODO: 2292, 2869, 2798(재귀로 풀어보기), 1436(규칙을 이용한 풀이해보기), 1931다시복습
+// TODO: 2292, 2869, 2798(재귀로 풀어보기), 1436(규칙을 이용한 풀이해보기), 1931다시복습, 적록색약 문제 복습, 탈출 문제구현어렵다 ㅠㅠ 복습
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] str = br.readLine().split("");
-        int cntZero = 0, cntOne = 0;
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int s = Integer.parseInt(st.nextToken());
+        int answer = 0, sum, lt = 0;
+        int m = s/2+1;
+        int[] arr = new int[n];
 
-        for(int i=1; i<str.length; i++) {
-            if(!str[i-1].equals(str[i])) {
-                if(str[i-1].equals("0")) cntZero++;
-                else if(str[i-1].equals("1")) cntOne++;
-            }
+        st = new StringTokenizer(br.readLine());
+        for(int i=0; i<n; i++) {
+            arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        if(str[str.length-1].equals("0")) cntZero++;
-        else if(str[str.length-1].equals("1")) cntOne++;
+        while(lt < n) {
+            sum = 0;
+            for(int rt = lt; rt<n; rt++) {
+                sum += arr[rt];
+                if(sum == s) {
+                    answer++;
+                }
+            }
+            lt++;
+        }
 
-        System.out.println(Math.min(cntZero, cntOne));
+        System.out.println(answer);
     }
 }
